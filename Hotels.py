@@ -15,7 +15,7 @@ class Navigating(tk.Tk):
 
         self.frames = {}
 
-        for F in (Welcome, Location, Login, peopleamount, finalbill, staff, Register, Welcome1):
+        for F in (Welcome, BookARoom, Login, finalbill, staff, Register, Welcome1):
             frame = F(container, self)
             self.frames[F] = frame
             frame.grid(row=0, column=0, sticky="nsew")
@@ -39,32 +39,23 @@ class Welcome(tk.Frame):
         usrlogin.place(x=1835, y=5)
 
 # Second Class
-class Location(tk.Frame):
+class BookARoom(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
         tk.Label(self, text="Which location would you like to stay at?", font=("Comic Sans", 20)).pack(padx=10, pady=5)
 
+
 # Third Class
-class roomtype(tk.Frame):
-    def __init__(self, parent, controller):
-        tk.Frame.__init__(self, parent)
-
-# Fourth Class
-class peopleamount(tk.Frame):
-    def __init__(self, parent, controller):
-        tk.Frame.__init__(self, parent)
-
-# Fifth Class
 class Welcome1(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
 
-# Sixth Class
+# Fourth Class
 class finalbill(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
 
-# Seventh Class
+# Fith Class
 class staff(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
@@ -73,7 +64,7 @@ class staff(tk.Frame):
         St = tk.Label(self, text="Welcome to The S.K. Hotels App!", font=("Comic Sans", 20))
         St.place(x=950, y=10)
 
-# Eighth Class
+# Sixth Class
 class Register(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
@@ -129,7 +120,7 @@ class Register(tk.Frame):
 
 
 
-#Ninth Class
+# Seventh Class
 class Login(tk.Frame):
     def __init__(self, parent, controller):
         tk.Frame.__init__(self, parent)
