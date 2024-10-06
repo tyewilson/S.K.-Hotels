@@ -1,0 +1,14 @@
+staff screen:
+
+After hotel is booked put details selected from the hotel booking screen into a csv 
+
+if staff logs in take them to a screen where the csv file is printed to a label
+
+next to bookings have a button to edit the date or cancel booking all together 
+
+append csv if the staff wants to edit information about the booking 
+
+
+optional: 
+
+make look nice 
